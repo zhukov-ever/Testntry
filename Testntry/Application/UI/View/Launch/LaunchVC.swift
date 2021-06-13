@@ -9,9 +9,12 @@ import UIKit
 
 class LaunchVC: BaseVC {
 
+    var coordinateNext: (() -> Void)?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        coordinateNext?()
     }
 
 }

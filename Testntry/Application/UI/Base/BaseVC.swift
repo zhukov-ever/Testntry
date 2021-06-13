@@ -12,9 +12,9 @@ class BaseVC: UIViewController {
     var coordinator: Coordinating!
     var styler: Styling!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+    
         styler.apply(to: self)
     }
     

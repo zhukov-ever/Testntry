@@ -10,11 +10,16 @@ import UIKit
 class LaunchCoordinator: Coordinator {
     
     override func start() {
-        let launchVC = StoryboardScene.LaunchIB.initialScene.instantiate()
-        launchVC.styler = Assembly.shared.launchStyler()
-        launchVC.coordinator = self
+        let vc = StoryboardScene.LaunchIB.initialScene.instantiate()
+        vc.styler = Assembly.shared.launchStyler()
+        vc.coordinator = self
         
-        navigationController?.pushViewController(launchVC, animated: false)
+        vc.coordinateNext = { [weak self] in
+            MainCoordinator.init(navigationController: self?.navigationController)
+                .start()
+        }
+        
+        navigationController?.pushViewController(vc, animated: false)
     }
     
 }

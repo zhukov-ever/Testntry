@@ -9,6 +9,16 @@
 /* Begin PBXBuildFile section */
 		017012BF26765AB800E2C5C4 /* LaunchStyler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017012BE26765AB800E2C5C4 /* LaunchStyler.swift */; };
 		017012C426765B7E00E2C5C4 /* LaunchCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017012C326765B7E00E2C5C4 /* LaunchCoordinator.swift */; };
+		017012CA26765D1500E2C5C4 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017012C926765D1500E2C5C4 /* MainVC.swift */; };
+		017012CF26765D1A00E2C5C4 /* MainIB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 017012CE26765D1A00E2C5C4 /* MainIB.storyboard */; };
+		017012D426765DC000E2C5C4 /* MainStyler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017012D326765DC000E2C5C4 /* MainStyler.swift */; };
+		017012D926765DF500E2C5C4 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017012D826765DF500E2C5C4 /* MainCoordinator.swift */; };
+		017012DF26766B6D00E2C5C4 /* NoEventsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017012DD26766B6D00E2C5C4 /* NoEventsCell.swift */; };
+		017012E026766B6D00E2C5C4 /* NoEventsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 017012DE26766B6D00E2C5C4 /* NoEventsCell.xib */; };
+		017012E926766B8D00E2C5C4 /* PublicHoilidayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017012E726766B8D00E2C5C4 /* PublicHoilidayCell.swift */; };
+		017012EA26766B8D00E2C5C4 /* PublicHoilidayCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 017012E826766B8D00E2C5C4 /* PublicHoilidayCell.xib */; };
+		017012F026766BAF00E2C5C4 /* FolkHolidayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017012EE26766BAF00E2C5C4 /* FolkHolidayCell.swift */; };
+		017012F126766BAF00E2C5C4 /* FolkHolidayCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 017012EF26766BAF00E2C5C4 /* FolkHolidayCell.xib */; };
 		01B0456B26762C6700959FF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B0456A26762C6700959FF0 /* AppDelegate.swift */; };
 		01B0456D26762C6700959FF0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B0456C26762C6700959FF0 /* SceneDelegate.swift */; };
 		01B0456F26762C6700959FF0 /* LaunchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B0456E26762C6700959FF0 /* LaunchVC.swift */; };
@@ -49,6 +59,16 @@
 /* Begin PBXFileReference section */
 		017012BE26765AB800E2C5C4 /* LaunchStyler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchStyler.swift; sourceTree = "<group>"; };
 		017012C326765B7E00E2C5C4 /* LaunchCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchCoordinator.swift; sourceTree = "<group>"; };
+		017012C926765D1500E2C5C4 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		017012CE26765D1A00E2C5C4 /* MainIB.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainIB.storyboard; sourceTree = "<group>"; };
+		017012D326765DC000E2C5C4 /* MainStyler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainStyler.swift; sourceTree = "<group>"; };
+		017012D826765DF500E2C5C4 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		017012DD26766B6D00E2C5C4 /* NoEventsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoEventsCell.swift; sourceTree = "<group>"; };
+		017012DE26766B6D00E2C5C4 /* NoEventsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoEventsCell.xib; sourceTree = "<group>"; };
+		017012E726766B8D00E2C5C4 /* PublicHoilidayCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicHoilidayCell.swift; sourceTree = "<group>"; };
+		017012E826766B8D00E2C5C4 /* PublicHoilidayCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PublicHoilidayCell.xib; sourceTree = "<group>"; };
+		017012EE26766BAF00E2C5C4 /* FolkHolidayCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolkHolidayCell.swift; sourceTree = "<group>"; };
+		017012EF26766BAF00E2C5C4 /* FolkHolidayCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FolkHolidayCell.xib; sourceTree = "<group>"; };
 		01B0456726762C6700959FF0 /* Testntry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Testntry.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01B0456A26762C6700959FF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		01B0456C26762C6700959FF0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -101,6 +121,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		017012C826765D0A00E2C5C4 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				017012EE26766BAF00E2C5C4 /* FolkHolidayCell.swift */,
+				017012EF26766BAF00E2C5C4 /* FolkHolidayCell.xib */,
+				017012E726766B8D00E2C5C4 /* PublicHoilidayCell.swift */,
+				017012E826766B8D00E2C5C4 /* PublicHoilidayCell.xib */,
+				017012DD26766B6D00E2C5C4 /* NoEventsCell.swift */,
+				017012DE26766B6D00E2C5C4 /* NoEventsCell.xib */,
+				017012C926765D1500E2C5C4 /* MainVC.swift */,
+				017012CE26765D1A00E2C5C4 /* MainIB.storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
 		01B0455E26762C6600959FF0 = {
 			isa = PBXGroup;
 			children = (
@@ -241,6 +276,7 @@
 			isa = PBXGroup;
 			children = (
 				01C7083226764E2A0090542F /* Launch */,
+				017012C826765D0A00E2C5C4 /* Main */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -259,6 +295,7 @@
 			children = (
 				01C70844267652D00090542F /* Coordinating.swift */,
 				017012C326765B7E00E2C5C4 /* LaunchCoordinator.swift */,
+				017012D826765DF500E2C5C4 /* MainCoordinator.swift */,
 			);
 			path = Coordinating;
 			sourceTree = "<group>";
@@ -282,6 +319,7 @@
 			children = (
 				01C7085C267657200090542F /* Styling.swift */,
 				017012BE26765AB800E2C5C4 /* LaunchStyler.swift */,
+				017012D326765DC000E2C5C4 /* MainStyler.swift */,
 			);
 			path = Styles;
 			sourceTree = "<group>";
@@ -389,9 +427,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				017012CF26765D1A00E2C5C4 /* MainIB.storyboard in Resources */,
+				017012EA26766B8D00E2C5C4 /* PublicHoilidayCell.xib in Resources */,
+				017012E026766B6D00E2C5C4 /* NoEventsCell.xib in Resources */,
 				01C707F7267646EA0090542F /* Localizable.strings in Resources */,
 				01B0457726762C6700959FF0 /* LaunchScreen.storyboard in Resources */,
 				01B0457426762C6700959FF0 /* Assets.xcassets in Resources */,
+				017012F126766BAF00E2C5C4 /* FolkHolidayCell.xib in Resources */,
 				01C707E826762E820090542F /* README.md in Resources */,
 				01B0457226762C6700959FF0 /* LaunchIB.storyboard in Resources */,
 			);
@@ -422,15 +464,21 @@
 				01C7082026764B820090542F /* Storyboards.swift in Sources */,
 				01C70854267656130090542F /* Assembly.swift in Sources */,
 				01B0456F26762C6700959FF0 /* LaunchVC.swift in Sources */,
+				017012D426765DC000E2C5C4 /* MainStyler.swift in Sources */,
 				01C7085D267657200090542F /* Styling.swift in Sources */,
 				01B0456B26762C6700959FF0 /* AppDelegate.swift in Sources */,
+				017012F026766BAF00E2C5C4 /* FolkHolidayCell.swift in Sources */,
 				01C7081E26764B820090542F /* Strings.swift in Sources */,
 				01C7081F26764B820090542F /* Assets.swift in Sources */,
+				017012DF26766B6D00E2C5C4 /* NoEventsCell.swift in Sources */,
+				017012D926765DF500E2C5C4 /* MainCoordinator.swift in Sources */,
+				017012E926766B8D00E2C5C4 /* PublicHoilidayCell.swift in Sources */,
 				017012BF26765AB800E2C5C4 /* LaunchStyler.swift in Sources */,
 				01C7083F26764F3B0090542F /* BaseVC.swift in Sources */,
 				01C70845267652D00090542F /* Coordinating.swift in Sources */,
 				01C7084D267655B00090542F /* BaseNVC.swift in Sources */,
 				01B0456D26762C6700959FF0 /* SceneDelegate.swift in Sources */,
+				017012CA26765D1500E2C5C4 /* MainVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

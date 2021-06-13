@@ -9,6 +9,6 @@ import Foundation
 
 protocol Styling {
     
-    func apply(to: BaseVC)
+    func apply(to: Any)
     
 }

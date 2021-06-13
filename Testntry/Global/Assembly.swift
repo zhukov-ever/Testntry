@@ -13,6 +13,7 @@ class Assembly {
     
     // MARK: - Stylers
     func launchStyler() -> LaunchStyler { LaunchStyler() }
+    func mainStyler() -> MainStyler { MainStyler() }
     
     // MARK: - Coordinators
     func launchCoordinator(nvc: BaseNVC) -> LaunchCoordinator { LaunchCoordinator(navigationController: nvc) }
