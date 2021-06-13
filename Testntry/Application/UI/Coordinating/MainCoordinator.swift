@@ -13,6 +13,7 @@ class MainCoordinator: Coordinator {
         let vc = StoryboardScene.MainIB.initialScene.instantiate()
         vc.coordinator = self
         vc.styler = Assembly.shared.mainStyler()
+        vc.presenter = Assembly.shared.mainPresenter()
         
         vc.coordinateFinishLoading = { [weak self] in
             guard let lastVC = self?.navigationController?.viewControllers.last else { return }

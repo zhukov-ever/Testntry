@@ -7,8 +7,7 @@
 
 import Foundation
 
-
-class HolidaysAPIServiceExample {
+class HolidaysAPIServiceExample: HolidaysAPIServiceProtocol {
     
     func read(complition: @escaping ((_: Result<[String: [HolidayByDayResponseModel]], Error>) -> Void)) {
         let response = exampleJSONwithOK
