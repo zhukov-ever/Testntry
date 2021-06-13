@@ -11,6 +11,9 @@ class Assembly {
     
     static var shared: Assembly = Assembly()
     
+    // MARK: - Services
+    func holidaysApiService() -> HolidaysAPIServiceExample { HolidaysAPIServiceExample() }
+    
     // MARK: - Stylers
     func launchStyler() -> LaunchStyler { LaunchStyler() }
     func mainStyler() -> MainStyler { MainStyler() }
