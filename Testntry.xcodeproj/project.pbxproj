@@ -12,6 +12,13 @@
 		011433762676826900DE1697 /* Holiday.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011433752676826900DE1697 /* Holiday.swift */; };
 		0114337B267688CA00DE1697 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0114337A267688CA00DE1697 /* MainPresenter.swift */; };
 		0116D0A0267690E500D6EFFE /* HolidaysAPIServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0116D09F267690E500D6EFFE /* HolidaysAPIServiceProtocol.swift */; };
+		0116D0AD2677ECEE00D6EFFE /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0116D0AC2677ECEE00D6EFFE /* Colors.xcassets */; };
+		0116D0C32677FC1200D6EFFE /* MainSectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0116D0C22677FC1200D6EFFE /* MainSectionHeaderView.swift */; };
+		0116D0C82677FC3400D6EFFE /* MainSectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0116D0C72677FC3400D6EFFE /* MainSectionHeaderView.xib */; };
+		0116D0CD2677FCF400D6EFFE /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0116D0CC2677FCF400D6EFFE /* BaseView.swift */; };
+		0116D0D62677FDD800D6EFFE /* UIView+Extenstions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0116D0D52677FDD800D6EFFE /* UIView+Extenstions.swift */; };
+		0116D0DE2677FDED00D6EFFE /* UITableViewCell+Dequeue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0116D0DD2677FDED00D6EFFE /* UITableViewCell+Dequeue.swift */; };
+		0116D0E6267800B900D6EFFE /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0116D0E5267800B900D6EFFE /* BaseTableViewCell.swift */; };
 		017012BF26765AB800E2C5C4 /* LaunchStyler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017012BE26765AB800E2C5C4 /* LaunchStyler.swift */; };
 		017012C426765B7E00E2C5C4 /* LaunchCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017012C326765B7E00E2C5C4 /* LaunchCoordinator.swift */; };
 		017012CA26765D1500E2C5C4 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017012C926765D1500E2C5C4 /* MainVC.swift */; };
@@ -34,7 +41,6 @@
 		01B0457226762C6700959FF0 /* LaunchIB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01B0457026762C6700959FF0 /* LaunchIB.storyboard */; };
 		01B0457426762C6700959FF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01B0457326762C6700959FF0 /* Assets.xcassets */; };
 		01B0457726762C6700959FF0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01B0457526762C6700959FF0 /* LaunchScreen.storyboard */; };
-		01B0458226762C6700959FF0 /* TestntryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B0458126762C6700959FF0 /* TestntryTests.swift */; };
 		01B0458D26762C6700959FF0 /* TestntryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B0458C26762C6700959FF0 /* TestntryUITests.swift */; };
 		01C707E826762E820090542F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 01C707E726762E820090542F /* README.md */; };
 		01C707F7267646EA0090542F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 01C707F6267646EA0090542F /* Localizable.strings */; };
@@ -71,6 +77,13 @@
 		011433752676826900DE1697 /* Holiday.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Holiday.swift; sourceTree = "<group>"; };
 		0114337A267688CA00DE1697 /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
 		0116D09F267690E500D6EFFE /* HolidaysAPIServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolidaysAPIServiceProtocol.swift; sourceTree = "<group>"; };
+		0116D0AC2677ECEE00D6EFFE /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		0116D0C22677FC1200D6EFFE /* MainSectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSectionHeaderView.swift; sourceTree = "<group>"; };
+		0116D0C72677FC3400D6EFFE /* MainSectionHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainSectionHeaderView.xib; sourceTree = "<group>"; };
+		0116D0CC2677FCF400D6EFFE /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		0116D0D52677FDD800D6EFFE /* UIView+Extenstions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extenstions.swift"; sourceTree = "<group>"; };
+		0116D0DD2677FDED00D6EFFE /* UITableViewCell+Dequeue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Dequeue.swift"; sourceTree = "<group>"; };
+		0116D0E5267800B900D6EFFE /* BaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
 		017012BE26765AB800E2C5C4 /* LaunchStyler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchStyler.swift; sourceTree = "<group>"; };
 		017012C326765B7E00E2C5C4 /* LaunchCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchCoordinator.swift; sourceTree = "<group>"; };
 		017012C926765D1500E2C5C4 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
@@ -96,7 +109,6 @@
 		01B0457626762C6700959FF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		01B0457826762C6700959FF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		01B0457D26762C6700959FF0 /* TestntryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestntryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		01B0458126762C6700959FF0 /* TestntryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestntryTests.swift; sourceTree = "<group>"; };
 		01B0458326762C6700959FF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		01B0458826762C6700959FF0 /* TestntryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestntryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		01B0458C26762C6700959FF0 /* TestntryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestntryUITests.swift; sourceTree = "<group>"; };
@@ -173,9 +185,20 @@
 			path = HolidaysAPI;
 			sourceTree = "<group>";
 		};
+		0116D0D42677FDC900D6EFFE /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				0116D0D52677FDD800D6EFFE /* UIView+Extenstions.swift */,
+				0116D0DD2677FDED00D6EFFE /* UITableViewCell+Dequeue.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		017012C826765D0A00E2C5C4 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				0116D0C22677FC1200D6EFFE /* MainSectionHeaderView.swift */,
+				0116D0C72677FC3400D6EFFE /* MainSectionHeaderView.xib */,
 				017012EE26766BAF00E2C5C4 /* FolkHolidayCell.swift */,
 				017012EF26766BAF00E2C5C4 /* FolkHolidayCell.xib */,
 				017012E726766B8D00E2C5C4 /* PublicHoilidayCell.swift */,
@@ -224,7 +247,6 @@
 			isa = PBXGroup;
 			children = (
 				01B0458326762C6700959FF0 /* Info.plist */,
-				01B0458126762C6700959FF0 /* TestntryTests.swift */,
 				017CC80A267676CB00EB97D7 /* ServicesTests.swift */,
 			);
 			path = TestntryTests;
@@ -244,6 +266,7 @@
 			children = (
 				01C7081A26764B500090542F /* Generated */,
 				01B0457326762C6700959FF0 /* Assets.xcassets */,
+				0116D0AC2677ECEE00D6EFFE /* Colors.xcassets */,
 				01B0457526762C6700959FF0 /* LaunchScreen.storyboard */,
 				01C707F6267646EA0090542F /* Localizable.strings */,
 			);
@@ -272,6 +295,7 @@
 		01C7082A26764DD10090542F /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				0116D0D42677FDC900D6EFFE /* Helpers */,
 				01143371267681FC00DE1697 /* Entities */,
 				01C7083726764F040090542F /* Model */,
 				01C7083626764EFD0090542F /* UI */,
@@ -340,8 +364,10 @@
 		01C7083D26764F320090542F /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				0116D0CC2677FCF400D6EFFE /* BaseView.swift */,
 				01C7083E26764F3B0090542F /* BaseVC.swift */,
 				01C7084C267655B00090542F /* BaseNVC.swift */,
+				0116D0E5267800B900D6EFFE /* BaseTableViewCell.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -491,10 +517,12 @@
 				017012E026766B6D00E2C5C4 /* NoEventsCell.xib in Resources */,
 				01C707F7267646EA0090542F /* Localizable.strings in Resources */,
 				01B0457726762C6700959FF0 /* LaunchScreen.storyboard in Resources */,
+				0116D0AD2677ECEE00D6EFFE /* Colors.xcassets in Resources */,
 				01B0457426762C6700959FF0 /* Assets.xcassets in Resources */,
 				017012F126766BAF00E2C5C4 /* FolkHolidayCell.xib in Resources */,
 				01C707E826762E820090542F /* README.md in Resources */,
 				01B0457226762C6700959FF0 /* LaunchIB.storyboard in Resources */,
+				0116D0C82677FC3400D6EFFE /* MainSectionHeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -519,11 +547,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0116D0CD2677FCF400D6EFFE /* BaseView.swift in Sources */,
+				0116D0C32677FC1200D6EFFE /* MainSectionHeaderView.swift in Sources */,
 				017012C426765B7E00E2C5C4 /* LaunchCoordinator.swift in Sources */,
 				01C7082026764B820090542F /* Storyboards.swift in Sources */,
 				0114336526767F3000DE1697 /* ModelErrors.swift in Sources */,
 				01C70854267656130090542F /* Assembly.swift in Sources */,
 				0116D0A0267690E500D6EFFE /* HolidaysAPIServiceProtocol.swift in Sources */,
+				0116D0D62677FDD800D6EFFE /* UIView+Extenstions.swift in Sources */,
 				0114336D26767F8200DE1697 /* Mapper.swift in Sources */,
 				017CC8062676768B00EB97D7 /* HolidaysResponseModel.swift in Sources */,
 				01B0456F26762C6700959FF0 /* LaunchVC.swift in Sources */,
@@ -532,11 +563,13 @@
 				01B0456B26762C6700959FF0 /* AppDelegate.swift in Sources */,
 				017013012676723200E2C5C4 /* HolidaysAPIServiceExample.swift in Sources */,
 				017012F026766BAF00E2C5C4 /* FolkHolidayCell.swift in Sources */,
+				0116D0E6267800B900D6EFFE /* BaseTableViewCell.swift in Sources */,
 				01C7081E26764B820090542F /* Strings.swift in Sources */,
 				01C7081F26764B820090542F /* Assets.swift in Sources */,
 				017012DF26766B6D00E2C5C4 /* NoEventsCell.swift in Sources */,
 				017012D926765DF500E2C5C4 /* MainCoordinator.swift in Sources */,
 				017012E926766B8D00E2C5C4 /* PublicHoilidayCell.swift in Sources */,
+				0116D0DE2677FDED00D6EFFE /* UITableViewCell+Dequeue.swift in Sources */,
 				017012FC267671ED00E2C5C4 /* RequestListOfHolidays.swift in Sources */,
 				017012BF26765AB800E2C5C4 /* LaunchStyler.swift in Sources */,
 				0114337B267688CA00DE1697 /* MainPresenter.swift in Sources */,
@@ -553,7 +586,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				01B0458226762C6700959FF0 /* TestntryTests.swift in Sources */,
 				017CC80B267676CB00EB97D7 /* ServicesTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

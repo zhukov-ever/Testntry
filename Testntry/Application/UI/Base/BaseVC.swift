@@ -18,4 +18,8 @@ class BaseVC: UIViewController {
         styler.apply(to: self)
     }
     
+    override var prefersStatusBarHidden: Bool {
+        return true
+    }
+    
 }

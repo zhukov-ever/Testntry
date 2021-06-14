@@ -1,8 +1,9 @@
 xcassets:
   inputs:
     - Testntry/Resources/Assets.xcassets
+    - Testntry/Resources/Colors.xcassets
   outputs:
-    - templateName: swift4
+    - templateName: swift5
       output: Testntry/Resources/Generated/Assets.swift
 strings:
   inputs:

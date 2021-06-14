@@ -5,7 +5,7 @@
 //  Created by kokozzz on 13.06.2021.
 //
 
-import Foundation
+import UIKit
 
 class LaunchStyler: Styling {
     

@@ -7,3 +7,12 @@
 */
 
 "global.app_name" = "Testntry";
+
+"data.empty" = "-";
+
+"screen.main.date_range" = "%@ — %@";
+"screen.main.button_prev" = "<";
+"screen.main.button_next" = ">";
+"screen.main.first_day_title" = "First day:";
+
+"screen.main.cell.no_events" = "No events";

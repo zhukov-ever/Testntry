@@ -7,17 +7,15 @@
 
 import UIKit
 
-class FolkHolidayCell: UITableViewCell {
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+class FolkHolidayCell: BaseTableViewCell {
+    
+    @IBOutlet weak var labelTitle: UILabel!
+    @IBOutlet weak var cardView: UIView!
+    
+    var element: Holidays! {
+        didSet {
+            labelTitle.text = element.name
+        }
     }
     
 }
