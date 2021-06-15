@@ -25,7 +25,7 @@
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kEN-OJ-GZg">
-                                            <rect key="frame" x="16" y="32" width="382" height="20.5"/>
+                                            <rect key="frame" x="16" y="16" width="382" height="20.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -61,7 +61,7 @@
                                         <constraint firstAttribute="trailing" secondItem="kEN-OJ-GZg" secondAttribute="trailing" constant="16" id="7Bo-6M-pUL"/>
                                         <constraint firstItem="uy5-gu-5Uw" firstAttribute="centerX" secondItem="NeK-Dg-rMS" secondAttribute="centerX" id="7gC-Us-VIj"/>
                                         <constraint firstItem="4ht-Qk-A1p" firstAttribute="firstBaseline" secondItem="qsJ-Az-6Va" secondAttribute="firstBaseline" id="EZX-qJ-0qi"/>
-                                        <constraint firstItem="kEN-OJ-GZg" firstAttribute="top" secondItem="NeK-Dg-rMS" secondAttribute="top" constant="32" id="NQa-mV-qo1"/>
+                                        <constraint firstItem="kEN-OJ-GZg" firstAttribute="top" secondItem="NeK-Dg-rMS" secondAttribute="top" constant="16" id="NQa-mV-qo1"/>
                                         <constraint firstAttribute="bottom" secondItem="uy5-gu-5Uw" secondAttribute="bottom" constant="16" id="VgG-gT-roS"/>
                                         <constraint firstItem="Wzw-ML-FVw" firstAttribute="centerY" secondItem="qsJ-Az-6Va" secondAttribute="centerY" id="XKm-Ic-tAX"/>
                                         <constraint firstAttribute="trailing" secondItem="Wzw-ML-FVw" secondAttribute="trailing" constant="16" id="uze-tJ-pof"/>

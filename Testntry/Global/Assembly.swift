@@ -12,11 +12,14 @@ class Assembly {
     static var shared: Assembly = Assembly()
     
     // MARK: - Services
-    func holidaysApiService() -> HolidaysAPIServiceProtocol { HolidaysAPIServiceExample() }
+    func holidaysApiService() -> HolidaysAPIServiceProtocol { HolidaysAPIService() }
+    private var holidaysState = HolidaysStateService()
+    func holidaysStateService() -> HolidaysStateService { return holidaysState }
     
     // MARK: - UseCases
-    func requestHolidaysUseCase() -> RequestListOfHolidays {
-        RequestListOfHolidays(service: holidaysApiService())
+    func requestHolidaysUseCase() -> RequestListOfHolidaysUseCase {
+        RequestListOfHolidaysUseCase(apiService: holidaysApiService(),
+                                     stateService: holidaysStateService())
     }
     
     // MARK: - Presenters

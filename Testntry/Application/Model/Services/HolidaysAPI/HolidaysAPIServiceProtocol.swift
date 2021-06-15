@@ -8,5 +8,7 @@
 import Foundation
 
 protocol HolidaysAPIServiceProtocol {
-    func read(complition: @escaping ((_: Result<[String: [HolidayByDayResponseModel]], Error>) -> Void))
+    func read(startDate: String,
+              endDate: String,
+              complition: @escaping ((_: Result<[String: [HolidayByDayResponseModel]], Error>) -> Void))
 }

@@ -1,5 +1,5 @@
 //
-//  Mapper.swift
+//  EntityMappers.swift
 //  Testntry
 //
 //  Created by kokozzz on 13.06.2021.
@@ -29,7 +29,7 @@ extension HolidayResponseType {
         case .folk:
             return .folk
         case .public:
-            return.public
+            return .public
         }
     }
 }

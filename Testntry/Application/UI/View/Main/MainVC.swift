@@ -52,8 +52,9 @@ extension MainVC {
         presenter.complition = { [weak self] value in
             guard let self = self else { return }
             switch value {
-            case .didLoadHolidays(let days):
-                self.dataSource.elements = days
+            case .didLoadHolidays(let state, let days):
+                self.fillUI(days: days)
+                self.fillUI(state: state)
             case .error(let error):
                 print(error)
             }
@@ -65,6 +66,16 @@ extension MainVC {
         dataSource = MainTableViewDataSource(tableView: tableView, styler: styler)
         tableView.delegate = dataSource
         tableView.dataSource = dataSource
+    }
+    
+    fileprivate func fillUI(state: HolidaysAppState) {
+        labelDateRange.text = L10n.Screen.Main.dateRange(state.startDate4title,
+                                                         state.endDate4title)
+        buttonFirstDaySelector.setTitle(state.firstDay4title, for: .normal)
+    }
+    
+    fileprivate func fillUI(days: [DayInfo]) {
+        self.dataSource.elements = days
     }
     
 }
@@ -82,7 +93,11 @@ class MainTableViewDataSource: NSObject, UITableViewDelegate, UITableViewDataSou
         self.styler = styler
     }
     
-    var elements: [DayInfo] = []
+    var elements: [DayInfo] = [] {
+        didSet {
+            tableView.reloadData()
+        }
+    }
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return elements.count

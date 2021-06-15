@@ -12,7 +12,7 @@ enum MainPresenterViewOutput {
 }
 
 enum MainPresenterViewInput {
-    case didLoadHolidays([DayInfo])
+    case didLoadHolidays(HolidaysAppState, [DayInfo])
     case error(Error)
 }
 
@@ -21,8 +21,8 @@ class MainPresenter {
     typealias Input = MainPresenterViewInput
     typealias Output = MainPresenterViewOutput
     
-    var holidaysUseCase: RequestListOfHolidays
-    internal init(holidaysUseCase: RequestListOfHolidays) {
+    var holidaysUseCase: RequestListOfHolidaysUseCase
+    internal init(holidaysUseCase: RequestListOfHolidaysUseCase) {
         self.holidaysUseCase = holidaysUseCase
     }
     
@@ -30,10 +30,10 @@ class MainPresenter {
     func handle(output: Output) {
         switch output {
         case .viewDidLoad:
-            holidaysUseCase.request { [weak self] result in
+            holidaysUseCase.request { [weak self] state, result in
                 switch result {
                 case .success(let days):
-                    self?.complition?(.didLoadHolidays(days))
+                    self?.complition?(.didLoadHolidays(state, days))
                 case .failure(let error):
                     self?.complition?(.error(error))
                 }

@@ -8,8 +8,10 @@
 import Foundation
 
 class HolidaysAPIServiceExample: HolidaysAPIServiceProtocol {
-    
-    func read(complition: @escaping ((_: Result<[String: [HolidayByDayResponseModel]], Error>) -> Void)) {
+    func read(startDate: String,
+              endDate: String,
+              complition: @escaping ((Result<[String : [HolidayByDayResponseModel]], Error>) -> Void)) {
+        
         let response = exampleJSONwithOK
         guard let dataResponse = response.data(using: .utf8) else { fatalError() }
         do {

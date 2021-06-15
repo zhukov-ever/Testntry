@@ -13,7 +13,7 @@ class MainSectionHeaderView: BaseView {
     
     var element: DayInfo! {
         didSet {
-            labelTitle.text = element.dateString
+            labelTitle.text = element.dateString4tableHeaders
         }
     }
     

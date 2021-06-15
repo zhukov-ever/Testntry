@@ -16,6 +16,7 @@ class MainStyler: Styling {
             
             vc.tableHeader.backgroundColor = Asset.Colors.accent.color
             
+            vc.labelDateRange.adjustsFontSizeToFitWidth = true
             vc.labelDateRange.textAlignment = .center
             vc.labelDateRange.font = UIFont.systemFont(ofSize: 30, weight: .bold)
             vc.labelDateRange.textColor = Asset.Colors.textOnAccent.color
@@ -25,9 +26,17 @@ class MainStyler: Styling {
             
             vc.buttonPrev.titleLabel?.font = UIFont.systemFont(ofSize: 30, weight: .bold)
             vc.buttonPrev.setTitleColor(Asset.Colors.textOnAccent.color, for: .normal)
+            vc.buttonPrev.setTitleColor(Asset.Colors.textOnAccent.color.withAlphaComponent(0.5), for: .highlighted)
             
             vc.buttonNext.titleLabel?.font = UIFont.systemFont(ofSize: 30, weight: .bold)
             vc.buttonNext.setTitleColor(Asset.Colors.textOnAccent.color, for: .normal)
+            vc.buttonNext.setTitleColor(Asset.Colors.textOnAccent.color.withAlphaComponent(0.5), for: .highlighted)
+            
+            vc.buttonFirstDaySelector.titleLabel?.font = UIFont.systemFont(ofSize: 16, weight: .medium)
+            vc.buttonFirstDaySelector.backgroundColor = Asset.Colors.background.color
+            vc.buttonFirstDaySelector.layer.cornerRadius = 4
+            vc.buttonFirstDaySelector.setTitleColor(Asset.Colors.textOnBackground.color, for: .normal)
+            vc.buttonFirstDaySelector.setTitleColor(Asset.Colors.textOnBackground.color.withAlphaComponent(0.5), for: .highlighted)
             
             vc.view.backgroundColor = Asset.Colors.accent.color
             vc.tableView.backgroundColor = Asset.Colors.background.color
