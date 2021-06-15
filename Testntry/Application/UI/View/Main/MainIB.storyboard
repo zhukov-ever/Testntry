@@ -33,10 +33,16 @@
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qsJ-Az-6Va">
                                             <rect key="frame" x="16" y="78" width="54" height="34"/>
                                             <state key="normal" title="Button"/>
+                                            <connections>
+                                                <action selector="prevDatesHandler:" destination="OLX-K5-zul" eventType="touchUpInside" id="WUG-Td-x2v"/>
+                                            </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wzw-ML-FVw">
                                             <rect key="frame" x="344" y="78" width="54" height="34"/>
                                             <state key="normal" title="Button"/>
+                                            <connections>
+                                                <action selector="nextDatesHandler:" destination="OLX-K5-zul" eventType="touchUpInside" id="Ykl-WF-o3h"/>
+                                            </connections>
                                         </button>
                                         <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="firstBaseline" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="uy5-gu-5Uw">
                                             <rect key="frame" x="155.5" y="85.5" width="103.5" height="26.5"/>

@@ -13,18 +13,26 @@ class Assembly {
     
     // MARK: - Services
     func holidaysApiService() -> HolidaysAPIServiceProtocol { HolidaysAPIService() }
-    private var holidaysState = HolidaysStateService()
-    func holidaysStateService() -> HolidaysStateService { return holidaysState }
+    private var holidaysState = MainDateRangeStateService()
+    func holidaysStateService() -> MainDateRangeStateService { return holidaysState }
     
     // MARK: - UseCases
     func requestHolidaysUseCase() -> RequestListOfHolidaysUseCase {
         RequestListOfHolidaysUseCase(apiService: holidaysApiService(),
                                      stateService: holidaysStateService())
     }
+    func changeWeekToNextUseCase() -> ChangeDateWeakToNextUseCase {
+        ChangeDateWeakToNextUseCase(stateService: holidaysStateService())
+    }
+    func changeWeekToPrevUseCase() -> ChangeDateWeakToPrevUseCase {
+        ChangeDateWeakToPrevUseCase(stateService: holidaysStateService())
+    }
     
     // MARK: - Presenters
     func mainPresenter() -> MainPresenter {
-        MainPresenter(holidaysUseCase: requestHolidaysUseCase())
+        MainPresenter(holidaysUseCase: requestHolidaysUseCase(),
+                      changeWeekPrevUseCase: changeWeekToPrevUseCase(),
+                      changeWeekNextUseCase: changeWeekToNextUseCase())
     }
     
     // MARK: - Stylers

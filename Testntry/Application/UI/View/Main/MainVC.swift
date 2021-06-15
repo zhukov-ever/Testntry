@@ -34,8 +34,21 @@ class MainVC: BaseVC {
         configurePresenter()
     }
     
+    
 }
 
+// MARK: - handlers
+extension MainVC {
+    
+    @IBAction func prevDatesHandler(_ sender: Any) {
+        presenter.handle(output: .pressPrevDates)
+    }
+    
+    @IBAction func nextDatesHandler(_ sender: Any) {
+        presenter.handle(output: .pressNextDates)
+    }
+    
+}
 
 // MARK: - private
 extension MainVC {
@@ -80,6 +93,8 @@ extension MainVC {
     
 }
 
+
+// MARK: - table data source
 class MainTableViewDataSource: NSObject, UITableViewDelegate, UITableViewDataSource {
     
     let styler: Styling

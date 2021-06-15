@@ -9,13 +9,13 @@ import Foundation
 
 class RequestListOfHolidaysUseCase {
     
-    init(apiService: HolidaysAPIServiceProtocol, stateService: HolidaysStateService) {
+    init(apiService: HolidaysAPIServiceProtocol, stateService: MainDateRangeStateService) {
         self.apiService = apiService
         self.stateService = stateService
     }
     
     var apiService: HolidaysAPIServiceProtocol
-    var stateService: HolidaysStateService
+    var stateService: MainDateRangeStateService
     
     func request(comlition: @escaping (_: HolidaysAppState, _: Result<[DayInfo], Error>) -> Void) {
         Assembly.shared.holidaysApiService().read(startDate: stateService.state.startDate,

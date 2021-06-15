@@ -19,7 +19,7 @@
 		0116D0D62677FDD800D6EFFE /* UIView+Extenstions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0116D0D52677FDD800D6EFFE /* UIView+Extenstions.swift */; };
 		0116D0DE2677FDED00D6EFFE /* UITableViewCell+Dequeue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0116D0DD2677FDED00D6EFFE /* UITableViewCell+Dequeue.swift */; };
 		0116D0E6267800B900D6EFFE /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0116D0E5267800B900D6EFFE /* BaseTableViewCell.swift */; };
-		0116D0FB26780B9800D6EFFE /* HolidaysStateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0116D0FA26780B9800D6EFFE /* HolidaysStateService.swift */; };
+		0116D0FB26780B9800D6EFFE /* MainDateRangeStateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0116D0FA26780B9800D6EFFE /* MainDateRangeStateService.swift */; };
 		0116D10026780D2400D6EFFE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0116D0FF26780D2400D6EFFE /* Constants.swift */; };
 		0116D10526780D7000D6EFFE /* HolidaysAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0116D10426780D7000D6EFFE /* HolidaysAPIService.swift */; };
 		0116D10A26790B8000D6EFFE /* HolidaysAppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0116D10926790B8000D6EFFE /* HolidaysAppState.swift */; };
@@ -59,6 +59,8 @@
 		01C7084D267655B00090542F /* BaseNVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C7084C267655B00090542F /* BaseNVC.swift */; };
 		01C70854267656130090542F /* Assembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C70853267656130090542F /* Assembly.swift */; };
 		01C7085D267657200090542F /* Styling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C7085C267657200090542F /* Styling.swift */; };
+		01FFF1D326792443002EBEF9 /* ChangeDateWeakToPrevUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FFF1D226792443002EBEF9 /* ChangeDateWeakToPrevUseCase.swift */; };
+		01FFF1D826792453002EBEF9 /* ChangeDateWeakToNextUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FFF1D726792453002EBEF9 /* ChangeDateWeakToNextUseCase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,7 +93,7 @@
 		0116D0D52677FDD800D6EFFE /* UIView+Extenstions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extenstions.swift"; sourceTree = "<group>"; };
 		0116D0DD2677FDED00D6EFFE /* UITableViewCell+Dequeue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Dequeue.swift"; sourceTree = "<group>"; };
 		0116D0E5267800B900D6EFFE /* BaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
-		0116D0FA26780B9800D6EFFE /* HolidaysStateService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolidaysStateService.swift; sourceTree = "<group>"; };
+		0116D0FA26780B9800D6EFFE /* MainDateRangeStateService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDateRangeStateService.swift; sourceTree = "<group>"; };
 		0116D0FF26780D2400D6EFFE /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		0116D10426780D7000D6EFFE /* HolidaysAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolidaysAPIService.swift; sourceTree = "<group>"; };
 		0116D10926790B8000D6EFFE /* HolidaysAppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolidaysAppState.swift; sourceTree = "<group>"; };
@@ -138,6 +140,8 @@
 		01C7084C267655B00090542F /* BaseNVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNVC.swift; sourceTree = "<group>"; };
 		01C70853267656130090542F /* Assembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assembly.swift; sourceTree = "<group>"; };
 		01C7085C267657200090542F /* Styling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styling.swift; sourceTree = "<group>"; };
+		01FFF1D226792443002EBEF9 /* ChangeDateWeakToPrevUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeDateWeakToPrevUseCase.swift; sourceTree = "<group>"; };
+		01FFF1D726792453002EBEF9 /* ChangeDateWeakToNextUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeDateWeakToNextUseCase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,7 +203,6 @@
 				0116D09F267690E500D6EFFE /* HolidaysAPIServiceProtocol.swift */,
 				017013002676723200E2C5C4 /* HolidaysAPIServiceExample.swift */,
 				0116D10426780D7000D6EFFE /* HolidaysAPIService.swift */,
-				0116D0FA26780B9800D6EFFE /* HolidaysStateService.swift */,
 			);
 			path = HolidaysAPI;
 			sourceTree = "<group>";
@@ -407,6 +410,7 @@
 			isa = PBXGroup;
 			children = (
 				0116D0A4267690EA00D6EFFE /* Entities */,
+				01FFF1DC26792954002EBEF9 /* AppStates */,
 				0116D0A5267690F800D6EFFE /* HolidaysAPI */,
 			);
 			path = Services;
@@ -416,6 +420,8 @@
 			isa = PBXGroup;
 			children = (
 				017012FB267671ED00E2C5C4 /* RequestListOfHolidaysUseCase.swift */,
+				01FFF1D226792443002EBEF9 /* ChangeDateWeakToPrevUseCase.swift */,
+				01FFF1D726792453002EBEF9 /* ChangeDateWeakToNextUseCase.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -428,6 +434,14 @@
 				017012D326765DC000E2C5C4 /* MainStyler.swift */,
 			);
 			path = Styles;
+			sourceTree = "<group>";
+		};
+		01FFF1DC26792954002EBEF9 /* AppStates */ = {
+			isa = PBXGroup;
+			children = (
+				0116D0FA26780B9800D6EFFE /* MainDateRangeStateService.swift */,
+			);
+			path = AppStates;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -583,6 +597,7 @@
 				0114336D26767F8200DE1697 /* EntityMappers.swift in Sources */,
 				017CC8062676768B00EB97D7 /* HolidaysResponseModel.swift in Sources */,
 				0116D10F267910CB00D6EFFE /* Date+Formatter.swift in Sources */,
+				01FFF1D826792453002EBEF9 /* ChangeDateWeakToNextUseCase.swift in Sources */,
 				01B0456F26762C6700959FF0 /* LaunchVC.swift in Sources */,
 				017012D426765DC000E2C5C4 /* MainStyler.swift in Sources */,
 				01C7085D267657200090542F /* Styling.swift in Sources */,
@@ -590,7 +605,7 @@
 				0116D1172679136800D6EFFE /* HolidaysAppState+UI.swift in Sources */,
 				017013012676723200E2C5C4 /* HolidaysAPIServiceExample.swift in Sources */,
 				017012F026766BAF00E2C5C4 /* FolkHolidayCell.swift in Sources */,
-				0116D0FB26780B9800D6EFFE /* HolidaysStateService.swift in Sources */,
+				0116D0FB26780B9800D6EFFE /* MainDateRangeStateService.swift in Sources */,
 				0116D0E6267800B900D6EFFE /* BaseTableViewCell.swift in Sources */,
 				01C7081E26764B820090542F /* Strings.swift in Sources */,
 				01C7081F26764B820090542F /* Assets.swift in Sources */,
@@ -603,6 +618,7 @@
 				0114337B267688CA00DE1697 /* MainPresenter.swift in Sources */,
 				01C7083F26764F3B0090542F /* BaseVC.swift in Sources */,
 				01C70845267652D00090542F /* Coordinating.swift in Sources */,
+				01FFF1D326792443002EBEF9 /* ChangeDateWeakToPrevUseCase.swift in Sources */,
 				011433762676826900DE1697 /* Holiday.swift in Sources */,
 				01C7084D267655B00090542F /* BaseNVC.swift in Sources */,
 				01B0456D26762C6700959FF0 /* SceneDelegate.swift in Sources */,

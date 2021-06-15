@@ -24,6 +24,14 @@ extension String {
 
 extension Date {
     
+    func apiDate2string() -> String? {
+        let df = DateFormatter()
+        df.dateFormat = "yyyy-MM-dd"
+        df.timeZone = timezone
+        df.locale = locale
+        return df.string(from: self)
+    }
+    
     func uiTitleDate2string() -> String? {
         let df = DateFormatter()
         df.dateFormat = "dd.MM.yyyy"

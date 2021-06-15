@@ -13,3 +13,9 @@ struct Constants {
     static var apiKey = "962c8bb2394146e6497b41272cf8a916"
     
 }
+
+struct AppParams {
+    
+    static var daysRangeAtHome = 7
+    
+}
