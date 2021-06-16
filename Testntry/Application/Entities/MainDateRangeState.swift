@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct HolidaysAppState {
+struct MainDateRangeState {
     var startDate: String
     var endDate: String
     var firstDay: Int

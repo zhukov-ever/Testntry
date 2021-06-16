@@ -10,6 +10,16 @@ import Foundation
 fileprivate let locale = Locale(identifier: "en_US_POSIX")
 fileprivate let timezone = TimeZone(secondsFromGMT: 0)
 
+extension Date {
+    var startOfWeek: Date? {
+        var calendar = Calendar(identifier: .gregorian)
+        calendar.locale = locale
+        calendar.timeZone = timezone ?? calendar.timeZone
+        guard let date = calendar.date(from: calendar.dateComponents([.yearForWeekOfYear, .weekOfYear], from: self)) else { return nil }
+        return calendar.date(byAdding: .day, value: 1, to: date)
+    }
+}
+
 extension String {
     
     func apiString2date() -> Date? {
@@ -61,7 +71,7 @@ extension Int {
     
     func dayOfWeek() -> String? {
         let shift4monday = 3
-        var calendar = Calendar(identifier: Calendar.Identifier.gregorian)
+        var calendar = Calendar(identifier: .gregorian)
         calendar.locale = locale
         calendar.timeZone = timezone ?? calendar.timeZone
         var components = calendar.dateComponents([.weekday], from: Date(timeIntervalSince1970: 0))

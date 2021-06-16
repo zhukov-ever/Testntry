@@ -29,7 +29,7 @@ class ChangeDateWeakToNextUseCase {
             return
         }
         
-        stateService.state = HolidaysAppState(startDate: newStartDate, endDate: newEndDate, firstDay: state.firstDay)
+        stateService.state = MainDateRangeState(startDate: newStartDate, endDate: newEndDate, firstDay: state.firstDay)
         comlition(.success(Void()))
     }
     

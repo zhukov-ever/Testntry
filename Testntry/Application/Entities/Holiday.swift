@@ -14,7 +14,7 @@ enum HolidayType {
 
 struct DayInfo {
     let dateString: String
-    let holidays: [Holidays]
+    let holidays: [Holidays]?
 }
 
 struct Holidays {

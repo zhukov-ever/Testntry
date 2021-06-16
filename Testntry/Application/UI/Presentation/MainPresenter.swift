@@ -14,7 +14,7 @@ enum MainPresenterViewOutput {
 }
 
 enum MainPresenterViewInput {
-    case didLoadHolidays(HolidaysAppState, [DayInfo])
+    case didLoadHolidays(MainDateRangeState, [DayInfo])
     case error(Error)
 }
 
@@ -62,13 +62,44 @@ class MainPresenter {
     
     private func loadAndNotify() {
         holidaysUseCase.request { [weak self] state, result in
+            guard let self = self else { return }
+            
             switch result {
             case .success(let days):
-                self?.complition?(.didLoadHolidays(state, days))
+                let daysByDate = days
+                    .reduce(into: [String:DayInfo]()) { $0[$1.dateString] = $1 }
+                let dayList: [DayInfo] = self.createDaysList(state: state)
+                    .map { DayInfo(dateString: $0, holidays: daysByDate[$0]?.holidays ) }
+                
+                self.complition?(.didLoadHolidays(state, dayList))
             case .failure(let error):
-                self?.complition?(.error(error))
+                self.complition?(.error(error))
             }
         }
+    }
+    
+    private func createDaysList(state: MainDateRangeState) -> [String] {
+        guard let startDate = state.startDate.apiString2date() else { return [] }
+        guard let endDate = state.endDate.apiString2date() else { return [] }
+        
+        var dates: [Date] = [startDate]
+        let calendar = Calendar.current
+        
+        while true {
+            guard let lastDate = dates.last else {
+                break
+            }
+            let newDate = calendar.date(byAdding: .day, value: 1, to: lastDate)
+
+            if let newDate = newDate, newDate.compare(endDate) == .orderedAscending {
+                dates.append(newDate)
+            } else {
+                dates.append(endDate)
+                break
+            }
+        }
+        
+        return dates.compactMap { $0.apiDate2string() }
     }
     
 }

@@ -17,9 +17,9 @@ class RequestListOfHolidaysUseCase {
     var apiService: HolidaysAPIServiceProtocol
     var stateService: MainDateRangeStateService
     
-    func request(comlition: @escaping (_: HolidaysAppState, _: Result<[DayInfo], Error>) -> Void) {
-        Assembly.shared.holidaysApiService().read(startDate: stateService.state.startDate,
-                                                  endDate: stateService.state.endDate) { result in
+    func request(comlition: @escaping (_: MainDateRangeState, _: Result<[DayInfo], Error>) -> Void) {
+        apiService.read(startDate: stateService.state.startDate,
+                        endDate: stateService.state.endDate) { result in
             DispatchQueue.main.async { [weak self] in
                 guard let self = self else { return }
                 switch result {

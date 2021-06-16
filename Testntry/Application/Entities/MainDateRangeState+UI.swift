@@ -7,7 +7,7 @@
 
 import Foundation
 
-extension HolidaysAppState {
+extension MainDateRangeState {
 
     var startDate4title: String {
         return startDate.apiString2date()?.uiTitleDate2string() ?? L10n.Data.empty

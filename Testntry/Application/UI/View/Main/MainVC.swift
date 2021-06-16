@@ -81,7 +81,7 @@ extension MainVC {
         tableView.dataSource = dataSource
     }
     
-    fileprivate func fillUI(state: HolidaysAppState) {
+    fileprivate func fillUI(state: MainDateRangeState) {
         labelDateRange.text = L10n.Screen.Main.dateRange(state.startDate4title,
                                                          state.endDate4title)
         buttonFirstDaySelector.setTitle(state.firstDay4title, for: .normal)
@@ -126,7 +126,7 @@ class MainTableViewDataSource: NSObject, UITableViewDelegate, UITableViewDataSou
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return elements[section].holidays.count
+        return elements[section].holidays?.count ?? 1
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
@@ -134,22 +134,30 @@ class MainTableViewDataSource: NSObject, UITableViewDelegate, UITableViewDataSou
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 64
+        if elements[indexPath.section].holidays != nil {
+            return 64
+        } else {
+            return 30
+        }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let element = elements[indexPath.section].holidays[indexPath.row]
-        
-        switch element.type {
-        case .folk:
-            let cell: FolkHolidayCell = tableView.dequeue(indexPath: indexPath)
+        if let element = elements[indexPath.section].holidays?[indexPath.row] {
+            switch element.type {
+            case .folk:
+                let cell: FolkHolidayCell = tableView.dequeue(indexPath: indexPath)
+                cell.styler = styler
+                cell.element = element
+                return cell
+            case .public:
+                let cell: PublicHoilidayCell = tableView.dequeue(indexPath: indexPath)
+                cell.styler = styler
+                cell.element = element
+                return cell
+            }
+        } else {
+            let cell: NoEventsCell = tableView.dequeue(indexPath: indexPath)
             cell.styler = styler
-            cell.element = elements[indexPath.section].holidays[indexPath.row]
-            return cell
-        case .public:
-            let cell: PublicHoilidayCell = tableView.dequeue(indexPath: indexPath)
-            cell.styler = styler
-            cell.element = elements[indexPath.section].holidays[indexPath.row]
             return cell
         }
     }
