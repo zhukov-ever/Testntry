@@ -16,3 +16,8 @@
 "screen.main.first_day_title" = "First day:";
 
 "screen.main.cell.no_events" = "No events";
+
+"alert.action.cancel" = "Cancel";
+"alert.action.ok" = "Ok";
+"alert.select_first_day.title" = "Select first day of week";
+"alert.error.title" = "Something went wrong";

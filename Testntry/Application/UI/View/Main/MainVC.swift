@@ -34,7 +34,6 @@ class MainVC: BaseVC {
         configurePresenter()
     }
     
-    
 }
 
 // MARK: - handlers
@@ -48,6 +47,21 @@ extension MainVC {
         presenter.handle(output: .pressNextDates)
     }
     
+    @IBAction func updateFirstDateHandler(_ sender: Any) {
+        let alert = UIAlertController(title: L10n.Alert.SelectFirstDay.title,
+                                      message: nil,
+                                      preferredStyle: .actionSheet)
+        (0...6).forEach { [weak self] in
+            let index = $0
+            alert.addAction(UIAlertAction(title: index.dayOfWeek() ?? L10n.Data.empty,
+                                          style: .default,
+                                          handler: { _ in
+                self?.presenter.handle(output: .updateFirstDate(index))
+            }))
+        }
+        alert.addAction(UIAlertAction(title: L10n.Alert.Action.cancel, style: .cancel, handler: nil))
+        present(alert, animated: true, completion: nil)
+    }
 }
 
 // MARK: - private
@@ -69,7 +83,11 @@ extension MainVC {
                 self.fillUI(days: days)
                 self.fillUI(state: state)
             case .error(let error):
-                print(error)
+                let alert = UIAlertController(title: L10n.Alert.Error.title,
+                                              message: error.localizedDescription,
+                                              preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: L10n.Alert.Action.ok, style: .cancel, handler: nil))
+                self.present(alert, animated: true, completion: nil)
             }
         }
         presenter.handle(output: .viewDidLoad)

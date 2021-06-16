@@ -11,6 +11,7 @@ enum MainPresenterViewOutput {
     case viewDidLoad
     case pressPrevDates
     case pressNextDates
+    case updateFirstDate(Int)
 }
 
 enum MainPresenterViewInput {
@@ -19,13 +20,13 @@ enum MainPresenterViewInput {
 }
 
 class MainPresenter {
-    internal init(holidaysUseCase: RequestListOfHolidaysUseCase, changeWeekPrevUseCase: ChangeDateWeakToPrevUseCase, changeWeekNextUseCase: ChangeDateWeakToNextUseCase, complition: ((MainPresenter.Input) -> Void)? = nil) {
+    internal init(holidaysUseCase: RequestListOfHolidaysUseCase, changeWeekPrevUseCase: ChangeDateWeakToPrevUseCase, changeWeekNextUseCase: ChangeDateWeakToNextUseCase, updateFirstDateUseCase: UpdateFirstDateUseCase, complition: ((MainPresenter.Input) -> Void)? = nil) {
         self.holidaysUseCase = holidaysUseCase
         self.changeWeekPrevUseCase = changeWeekPrevUseCase
         self.changeWeekNextUseCase = changeWeekNextUseCase
+        self.updateFirstDateUseCase = updateFirstDateUseCase
         self.complition = complition
-    }
-    
+    }    
     
     typealias Input = MainPresenterViewInput
     typealias Output = MainPresenterViewOutput
@@ -33,6 +34,7 @@ class MainPresenter {
     var holidaysUseCase: RequestListOfHolidaysUseCase
     var changeWeekPrevUseCase: ChangeDateWeakToPrevUseCase
     var changeWeekNextUseCase: ChangeDateWeakToNextUseCase
+    var updateFirstDateUseCase: UpdateFirstDateUseCase
     
     var complition: ((Input) -> Void)?
     func handle(output: Output) {
@@ -57,6 +59,10 @@ class MainPresenter {
             }
         case .viewDidLoad:
             loadAndNotify()
+        case .updateFirstDate(let dayIndex):
+            updateFirstDateUseCase.request(dayIndex: dayIndex) { [weak self] _ in
+                self?.loadAndNotify()
+            }
         }
     }
     

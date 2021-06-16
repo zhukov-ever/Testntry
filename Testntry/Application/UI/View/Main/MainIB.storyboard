@@ -56,6 +56,9 @@
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ht-Qk-A1p">
                                                     <rect key="frame" x="49.5" y="-7.5" width="54" height="34"/>
                                                     <state key="normal" title="Button"/>
+                                                    <connections>
+                                                        <action selector="updateFirstDateHandler:" destination="OLX-K5-zul" eventType="touchUpInside" id="2Xr-rw-Qkf"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                         </stackView>

@@ -27,12 +27,16 @@ class Assembly {
     func changeWeekToPrevUseCase() -> ChangeDateWeakToPrevUseCase {
         ChangeDateWeakToPrevUseCase(stateService: holidaysStateService())
     }
+    func updateFirstDateUseCase() -> UpdateFirstDateUseCase {
+        UpdateFirstDateUseCase(stateService: holidaysStateService())
+    }
     
     // MARK: - Presenters
     func mainPresenter() -> MainPresenter {
         MainPresenter(holidaysUseCase: requestHolidaysUseCase(),
                       changeWeekPrevUseCase: changeWeekToPrevUseCase(),
-                      changeWeekNextUseCase: changeWeekToNextUseCase())
+                      changeWeekNextUseCase: changeWeekToNextUseCase(),
+                      updateFirstDateUseCase: updateFirstDateUseCase())
     }
     
     // MARK: - Stylers

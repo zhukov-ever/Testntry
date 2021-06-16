@@ -11,6 +11,23 @@ import Foundation
 // swiftlint:disable nesting type_body_length type_name vertical_whitespace_opening_braces
 internal enum L10n {
 
+  internal enum Alert {
+    internal enum Action {
+      /// Cancel
+      internal static let cancel = L10n.tr("Localizable", "alert.action.cancel")
+      /// Ok
+      internal static let ok = L10n.tr("Localizable", "alert.action.ok")
+    }
+    internal enum Error {
+      /// Something went wrong
+      internal static let title = L10n.tr("Localizable", "alert.error.title")
+    }
+    internal enum SelectFirstDay {
+      /// Select first day of week
+      internal static let title = L10n.tr("Localizable", "alert.select_first_day.title")
+    }
+  }
+
   internal enum Data {
     /// -
     internal static let empty = L10n.tr("Localizable", "data.empty")

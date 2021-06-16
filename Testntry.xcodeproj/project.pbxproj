@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0108FCBE267A8C8800EA1E19 /* UpdateFirstDateUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0108FCBD267A8C8800EA1E19 /* UpdateFirstDateUseCase.swift */; };
 		0114336526767F3000DE1697 /* ModelErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0114336426767F3000DE1697 /* ModelErrors.swift */; };
 		0114336D26767F8200DE1697 /* EntityMappers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0114336C26767F8200DE1697 /* EntityMappers.swift */; };
 		011433762676826900DE1697 /* Holiday.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011433752676826900DE1697 /* Holiday.swift */; };
@@ -81,6 +82,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0108FCBD267A8C8800EA1E19 /* UpdateFirstDateUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateFirstDateUseCase.swift; sourceTree = "<group>"; };
 		0114336426767F3000DE1697 /* ModelErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelErrors.swift; sourceTree = "<group>"; };
 		0114336C26767F8200DE1697 /* EntityMappers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntityMappers.swift; sourceTree = "<group>"; };
 		011433752676826900DE1697 /* Holiday.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Holiday.swift; sourceTree = "<group>"; };
@@ -422,6 +424,7 @@
 				017012FB267671ED00E2C5C4 /* RequestListOfHolidaysUseCase.swift */,
 				01FFF1D226792443002EBEF9 /* ChangeDateWeakToPrevUseCase.swift */,
 				01FFF1D726792453002EBEF9 /* ChangeDateWeakToNextUseCase.swift */,
+				0108FCBD267A8C8800EA1E19 /* UpdateFirstDateUseCase.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -613,6 +616,7 @@
 				017012D926765DF500E2C5C4 /* MainCoordinator.swift in Sources */,
 				017012E926766B8D00E2C5C4 /* PublicHoilidayCell.swift in Sources */,
 				0116D0DE2677FDED00D6EFFE /* UITableViewCell+Dequeue.swift in Sources */,
+				0108FCBE267A8C8800EA1E19 /* UpdateFirstDateUseCase.swift in Sources */,
 				017012FC267671ED00E2C5C4 /* RequestListOfHolidaysUseCase.swift in Sources */,
 				017012BF26765AB800E2C5C4 /* LaunchStyler.swift in Sources */,
 				0114337B267688CA00DE1697 /* MainPresenter.swift in Sources */,
