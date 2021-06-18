@@ -116,3 +116,22 @@ I really want to try some technologies. This project seems to be a good candidat
 - Combine
 - Tests for services and presentation layer
 - Advanced CoreAnimation
+
+## Project review
+
+Project contains DI container called `Assembly`.
+
+Main source code is located at `Testntry/Application` folder.
+
+Model layer contains:
+
+- Use cases - implements business requirenment for the applications
+
+- Services - provides access to API, data storage
+
+UI layer contains 
+
+- Styles - incapsulate styling logic
+- Coordinating - contains logic for transitioning between screens
+- View - contains ui classes and nibs for screens and components
+- Presentation - glue between views and usecases
